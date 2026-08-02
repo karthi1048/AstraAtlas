@@ -1,0 +1,17 @@
+[project]
+name = "astraatlas-backend"
+version = "0.1.0"
+description = "Backend service for the AstraAtlas platform"
+readme = "README.md"
+authors = [
+    { name = "karthi1048", email = "" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+backend = "backend:main"
+
+[build-system]
+requires = ["uv_build>=0.12.1,<0.13.0"]
+build-backend = "uv_build"
