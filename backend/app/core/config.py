@@ -1,5 +1,7 @@
 from functools import lru_cache
+
 from pydantic_settings import BaseSettings, SettingsConfigDict
+
 
 class Settings(BaseSettings):
     app_name: str = "AstraAtlas"
@@ -11,6 +13,7 @@ class Settings(BaseSettings):
         env_file=".env",
         case_sensitive=False,
     )
+
 
 # This creates Settings object only once & reuse it
 @lru_cache
