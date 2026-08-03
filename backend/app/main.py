@@ -3,6 +3,7 @@ from fastapi import FastAPI
 from app.api.router import api_router
 from app.core.config import get_settings
 from app.core.logging import configure_logging
+from app.core.exceptions import register_exception_handlers
 
 configure_logging()
 settings = get_settings()
@@ -17,5 +18,7 @@ app = FastAPI(
 )
 
 logger.info("AstraAtlas backend started successfully.")
+
+register_exception_handlers(app)
 
 app.include_router(api_router)

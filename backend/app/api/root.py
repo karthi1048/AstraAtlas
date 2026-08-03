@@ -17,3 +17,8 @@ def root():
         "environment": settings.app_env,
         "status": "running",
     }
+
+# Temporary test route
+# @router.get("/error")
+# def trigger_error():
+#     raise RuntimeError("Testing global exception handler.")
