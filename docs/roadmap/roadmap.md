@@ -1,219 +1,388 @@
-# Capability driven roadmap:
+# AstraAtlas Roadmap
 
-I propose we divide AstraAtlas into Eras, Instead of just versions.
+**Version:** Draft 1.0
+**Status:** Active
+**Last Updated:** August 2026
+
+# Planning Model
+
+AstraAtlas is planned using four layers.
+
+```
+Mission
+    ↓
+Eras
+    ↓
+Versions
+    ↓
+Sprints
+```
+
+## Mission
+
+Defines why AstraAtlas exists.
+
+## Era
+
+Defines a major capability the platform gains.
+
+An Era represents a meaningful evolution of AstraAtlas rather than simply a collection of features.
+
+## Version
+
+Represents software releases delivered within an Era.
+
+Example:
+
+* v0.1.x
+* v0.2.x
+* v1.0.0
+
+## Sprint
+
+Represents the engineering work required to achieve the goals of the current Era.
+
+Sprints are implementation plans and may be adjusted as the project evolves.
 
 
 # 🌍 Era 1 — Foundation
 
-**Versions**
+**Version**
 
 ```
 V0.0.x
 ```
 
-Goal
+## Goal
 
-	Build the project’s identity and engineering foundation.
+Build AstraAtlas’s identity, engineering culture, and technical foundation.
 
-Includes
+## Capabilities
 
 * Constitution
-* ADRs
-* Architecture
+* Mission Statement
+* Vision & Scope
+* Architecture Decision Records (ADRs)
+* Repository structure
+* Development standards
+* Backend foundation
+* Testing framework
+* CI/CD foundation
 * Documentation
-* Repository
-* Standards
+* Quality tooling
 
-Status
+## Engineering Milestones
 
-**Current Era**
+* Sprint 0 – Vision & Planning
+* Sprint 1 – Repository Foundation
+* Sprint 2 – Backend Foundation & Engineering Excellence
+
+## Success Criteria
+
+* Modern development workflow established.
+* Automated quality checks in place.
+* Contributors can set up the project easily.
+* Architecture is documented.
+
+**Status:** ✅ Completed
 
 
 # 🚀 Era 2 — Core Platform
+
+**Version**
 
 ```
 V0.1.x
 ```
 
-Goal
+## Goal
 
-	Build the first working platform.
+Deliver the first functional AstraAtlas platform capable of collecting, storing, and serving trusted space data.
 
-Major capabilities
+## Capabilities
 
-* Backend
-* Database
+* Frontend foundation
+* Backend API
+* Database integration
 * Connector framework
 * Scheduler
-* First official source
+* First official data connector
+* Data normalization
 * API foundation
 
-Success
+## Engineering Milestones
 
-The platform can retrieve, normalize and store official data.
+* Sprint 3 – Frontend Foundation
+* Sprint 4 – Core Backend APIs
+* Sprint 5 – Data Ingestion Engine
+
+## Success Criteria
+
+* Data is retrieved from official sources.
+* Data is normalized and stored.
+* APIs expose trusted information.
+* Frontend displays real data.
+
+**Status:** 🔄 Next Era
 
 
 # 🛰 Era 3 — Data Expansion
+
+**Version**
 
 ```
 V0.2.x
 ```
 
-Goal
+## Goal
 
-	Support multiple organizations.
+Expand AstraAtlas beyond a single organization into a multi-agency platform.
 
-Capabilities
+## Capabilities
 
-* NASA
-* ISRO
-* ESA
-* Additional connectors
+* NASA connector
+* ISRO connector
+* ESA connector
+* Additional official agencies
 * Unified data model
-* Better validation
+* Improved validation
+* Better deduplication
+* Connector management
 
-Success
+## Engineering Milestones
 
-AstraAtlas becomes useful beyond one organization.
+•	Sprint 6 – Multi-source Integration
+
+## Success Criteria
+
+* Multiple organizations supported.
+* Unified platform experience.
+* Improved trust through cross-validation.
 
 
 # 🌐 Era 4 — Public Experience
+
+**Version**
 
 ```
 V0.3.x
 ```
 
-Goal
+## Goal
 
-	Make AstraAtlas usable by the public.
+Provide an excellent public experience for learners, professionals, researchers, and enthusiasts.
 
-Capabilities
+## Capabilities
 
-* Website
+* Responsive website
 * Search
 * Mission pages
 * Satellite pages
 * Launch pages
 * Trust Cards
+* Better navigation
+* Accessibility improvements
+
+## Engineering Milestones
+
+•	Sprint 7 – User Experience & Public Platform
+
+## Success Criteria
+
+* AstraAtlas becomes genuinely useful to the public.
+* Information is easy to discover and understand.
 
 
 # 🏗 Era 5 — Reliable Platform
+
+**Version**
 
 ```
 V0.4.x
 ```
 
-Goal
+## Goal
 
-Production readiness.
+Prepare AstraAtlas for reliable production deployment.
 
-Capabilities
+## Capabilities
 
-* CI/CD
 * Docker
+* Deployment automation
 * Monitoring
-* Logging
-* Security
-* Performance
-* Better tests
+* Logging improvements
+* Security hardening
+* Performance optimization
+* Caching
+* Backup strategy
+* Infrastructure improvements
+* Higher automated test coverage
 
-Success
+## Engineering Milestones
 
-Someone can deploy AstraAtlas with confidence.
+* Sprint 8 – Security & Reliability
+* Sprint 9 – Infrastructure & Production Readiness
+
+## Success Criteria
+
+* Platform can be deployed confidently.
+* Strong operational visibility.
+* Security baseline established.
+* Stable production architecture.
 
 
 # ⭐ Era 6 — First Stable Release
+
+**Version**
 
 ```
 V1.0.0
 ```
 
-Goal
+## Goal
 
-Become a trustworthy public platform.
+Release AstraAtlas as a trustworthy public platform.
 
-Requirements
-
-Everything we discussed.
-
-Plus
+## Requirements
 
 * Documentation complete
-* Security reviewed
+* Security review completed
 * Public API documented
-* Core testing complete
-* Stable releases
+* Core functionality stable
+* Testing completed
+* Release notes prepared
+* Community documentation ready
+
+## Engineering Milestones
+
+•	Sprint 10 – Release Preparation
+
+## Success Criteria
+
+* Public v1.0.0 released.
+* Ready for open-source community growth.
+* Long-term maintenance process established.
 
 
 # 🔭 Era 7 — Platform Growth
+
+**Version**
 
 ```
 V2.x
 ```
 
-Goal
+## Goal
 
-Transform AstraAtlas into a developer platform.
+Transform AstraAtlas into a platform for developers and advanced users.
 
-Examples
+## Possible Capabilities
 
-* Public API
+* Public API improvements
 * SDKs
-* Notifications
-* RSS
+* RSS feeds
 * Webhooks
+* Notifications
 * Integrations
+* Developer portal
 
 
 # 📊 Era 8 — Knowledge Platform
+
+**Version**
 
 ```
 V3.x
 ```
 
-Goal
+## Goal
 
-Historical intelligence.
+Transform AstraAtlas into a historical and analytical knowledge platform.
 
-Examples
+## Possible Capabilities
 
 * Historical timelines
 * Mission evolution
-* Statistics
-* Comparisons
-* Analytics
+* Launch analytics
+* Statistical dashboards
+* Agency comparisons
+* Interactive visualizations
+* Research tools
 
-Imagine comparing:
+Example:
 
 Apollo
 
 ↓
 
-Shuttle
+Space Shuttle
 
 ↓
 
 Artemis
 
-From one interface.
+...explored through one unified interface.
 
 
 # 🌌 Era 9 — Ecosystem
+
+**Version**
 
 ```
 V4.x
 ```
 
-Goal
+## Goal
 
-Become a platform others build upon.
+Enable AstraAtlas to become a platform that others can build upon.
 
-Examples
+## Possible Capabilities
 
-* Plugins
-* Community connectors
-* Research tools
+* Plugin system
+* Community-developed connectors
 * Educational tools
-* Mobile apps
-* Data exports
+* Research integrations
+* Mobile applications
 * Public datasets
+* Data export tools
+* Third-party ecosystem
+
+
+# Security Evolution
+
+Security will mature alongside the platform.
+
+| Era    | Focus                               |
+	
+| Era 1  | Secure engineering practices        |
+| Era 2  | API security and validation         |
+| Era 3  | Data integrity and provenance       |
+| Era 4  | Public trust indicators             |
+| Era 5  | Production hardening and monitoring |
+| Era 6+ | Continuous security improvements    |
+
+
+# Trust Evolution
+
+Trust is AstraAtlas’s defining feature.
+
+The platform will progressively strengthen:
+
+* Official data sourcing
+* Source attribution
+* Trust Levels
+* Trust Cards
+* Data provenance
+* Validation pipelines
+* Transparent update history
+
+Every future capability should strengthen—not weaken—the platform’s trustworthiness.
+
+
+# Living Document
+
+This roadmap is intentionally long-term.
+
+Individual sprints, versions, and implementation details may evolve as the project grows.
+
+However, the Mission, the capability-driven Era model, and AstraAtlas’s core engineering principles should remain stable unless a significant architectural decision justifies revising them through a new ADR.
