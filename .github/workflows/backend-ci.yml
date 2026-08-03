@@ -1,0 +1,42 @@
+name: Backend CI
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+      - "**"
+  pull_request:
+
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: backend
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v6
+
+      - name: Set up Python
+        run: uv python install 3.12
+
+      - name: Sync dependencies
+        run: uv sync --locked
+
+      - name: Ruff Check
+        run: uv run ruff check .
+
+      - name: Ruff Format Check
+        run: uv run ruff format . --check
+
+      - name: Run mypy
+        run: uv run mypy .
+
+      - name: Run pytest
+        run: uv run pytest
