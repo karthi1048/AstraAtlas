@@ -1,1 +1,1 @@
-Contains source code for AstraAtlas backend
+Contains code for AstraAtlas backend
