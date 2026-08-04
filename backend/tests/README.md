@@ -1,1 +1,1 @@
-Contains tests for the backend application
+Contains tests for the backend
