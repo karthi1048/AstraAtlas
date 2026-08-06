@@ -1,0 +1,22 @@
+repos:
+  # ==========================================
+  # Backend Quality Checks
+  # ==========================================
+  - repo: local
+    hooks:
+      - id: backend-checks
+        name: Backend Quality Checks
+        entry: uv run --project backend python -m scripts.hooks.backend
+        language: system
+        pass_filenames: false
+        files: ^backend/
+
+  # ==========================================
+  # Frontend Quality Checks
+  # ==========================================
+      - id: frontend-checks
+        name: Frontend Quality Checks
+        entry: python -m scripts.hooks.frontend
+        language: system
+        pass_filenames: false
+        files: ^frontend/
