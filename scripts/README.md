@@ -1,0 +1,1 @@
+Contains python scripts that would be utilized by backend & frontend.
